@@ -1,0 +1,76 @@
+body {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 45px;
+    color: white;
+}
+
+.flex-container {
+    display: flex;
+    background-color: rgb(209, 209, 209);
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.flexbox-red {
+    background-color: rgb(248, 125, 125);
+    width: 290px;
+    height: 270px;
+    margin: 10px 5px 10px 10px;
+    text-align: center;
+    align-items: center;
+    line-height: 160px;
+}
+
+.flexbox-green {
+    background-color: rgb(193, 250, 140);
+    height: 110px;
+    width: 470px;
+    margin: 10px 0px 10px 5px;
+    text-align: center;
+    align-items: center;
+    line-height: 20px;
+}
+
+.flexbox-pink {
+    background-color: rgb(244, 158, 247);
+    height: 140px;
+    width: 225px;
+    margin: 10px 10px 10px 5px;
+    text-align: center;
+    align-items: center;
+    line-height: 40px;
+}
+
+.flexbox-purple {
+    background-color: rgb(172, 166, 253);
+    height: 65px;
+    width: 225px;
+    margin: 5px 0px 5px 10px; 
+    text-align: center;
+    line-height: 80px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%; 
+    flex: 2;
+}
+  
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    flex: 0;
+}
+  
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
